@@ -1,0 +1,208 @@
+/* Services */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+#mw__service-block {
+	--font-family: Handlee, cursive;
+	--gap: 10px;
+}
+
+#mw__service-block .intro-services {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	gap: var(--gap);
+}
+
+#mw__service-block .service-icon--wrap {
+	flex: 1 1 calc(33% - var(--gap));
+	text-align: center;
+}
+
+#mw__service-block .service-icon--wrap img {
+	max-width: 90px;
+}
+
+#mw__service-block .service-icon--wrap h4 {
+	font-size: 18px;
+	font-family: var(--font-family);
+}
+
+#mw__service-menu .services-list{
+	--yellow: #ffb344;
+	--blue-400: #3c78d8;
+	--blue-200: #5da8f7;
+	--gray: #444444;
+	--gap: 20px;
+	--radius: 20px;
+	--padding: 35px;
+	--dims: 40px;
+	
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	gap: var(--gap);
+}
+
+#mw__service-menu .services-item {
+	flex: 1 0 calc(33% - var(--gap));
+	min-width: 300px;
+	background-color: white;
+	border-radius: var(--radius);
+	padding: var(--padding);
+	box-shadow: 7px 7px 0 var(--blue-400)
+}
+
+#mw__service-menu .service-item--content h4 {
+	position: relative;
+	color: var(--blue-400);
+	font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#mw__service-menu .service-item--content h4:after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 70%;
+	height: 2px;
+	background-color: var(--yellow);
+}
+
+#mw__service-menu .service-item--details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#mw__service-menu .services-item-button > a {
+	display: block;
+	text-align: center;
+}
+
+#mw__service-menu .service-item--price p {
+	color: var(--blue-200);
+	text-align: center;
+	font-family: Handlee, cursive;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#mw__service-menu .service-item--price h3 {
+	position: relative;
+	color: var(--gray);
+	text-align: center;
+	font-size: 48px;
+	font-weight: 800;
+	line-height: 1;
+	margin: 0;
+	z-index: 0;
+}
+
+#mw__service-menu .service-item--price h3:after {
+	content: "";
+	position: absolute;
+	top: -15%;
+	left: 5%;
+	width: var(--dims);
+	height: var(--dims);
+	background-color: var(--yellow);
+	border-radius: calc(var(--dims) /2);
+	z-index: -1;
+}
+
+#mw__service-menu .price-superset {
+	position: relative;
+	font-size: 16px;
+	top: -24px;
+}
+
+/* Buttons */
+
+.btn{
+    background-color: #3c78d8;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 11px 30px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: #5ca8f7;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Side Box */
+
+#franchise-side-box{
+    border: 1px solid #cfcfcf;
+    background-color: #f6f6f6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.franchise-contact-item{
+    margin-bottom: 20px;
+}
+
+.franchise-contact-item a{
+    color: #000;
+}
+
+.franchise-contact-item a:hover{
+    text-decoration: none;
+    color: #3c78d8;
+}
+
+.franchise-contact-item a i{
+    color: #3c78d8;
+}
+
+/* Team */
+
+.team-content{
+    margin-bottom: 50px;
+}
+
+.team-member{
+    margin-bottom: 50px;
+}
+.team-member h4{
+    font-size: 24px;
+}
+.team-member img{
+    margin-bottom: 30px;
+}
+
+/* Review */
+
+.review-item .review-content-text{
+    font-family: 'DM Serif Display',serif;
+    color: #2b2d2f;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+.review-item .review-stars{
+    margin-bottom: 20px;
+}
+
+.review-item .review-stars i{
+    color: #3c78d8;
+    font-size: 20px;
+}
+.review-item .review-name-date{
+    font-size: 15px;
+    color: #000;    
+}
+
+.btn.franchise-search, .btn.find-near-you{
+	display: inline-block;
+}

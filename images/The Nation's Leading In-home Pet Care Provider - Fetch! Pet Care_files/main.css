@@ -1,0 +1,15 @@
+/* disable the search button on product search module, since return can just be used instead */
+.widget_product_search button {
+  display: none;
+}
+
+/* fix for bootstrap4 conflicts with woocom checkout/account layout */
+.woocommerce .col-1,
+.woocommerce .col-2 {
+  max-width: none;
+}
+
+/* fix for scriptless social sharing button text color */
+.scriptlesssocialsharing-buttons a {
+  color: #fff !important;
+}
